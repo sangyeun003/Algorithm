@@ -21,4 +21,4 @@ int main(void)
 
     return (0);
 }
-https://cochin-man.tistory.com/50
+// https://cochin-man.tistory.com/50

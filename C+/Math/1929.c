@@ -11,7 +11,7 @@ int main(void)
     scanf("%d", &m);
     scanf("%d", &n);
     num[1] = -1;
-    for (int i = 1; i * i < n; i++)
+    for (int i = 1; i * i <= n; i++)
         end = i;
     for (int i = 2; i <= end; i++)
     {
