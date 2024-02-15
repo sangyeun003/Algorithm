@@ -23,15 +23,47 @@ void    bubble_sort(char *str)
     }
 }
 
-void    quick_sort(char *str)
+void	swap(char *a, char *b)
 {
-    
+	char	temp;
+
+	temp = *a;
+	*a = *b;
+	*b = temp;
+}
+
+void    quick_sort(char *str, int start, int end)
+{
+    int	pivot_idx;
+	int	left;
+	int	right;
+	
+	if (start >= end)
+		return ;
+	pivot_idx = start;
+	left = start + 1;
+	right = end;
+	while (left < right)
+	{
+		while (str[left] >= str[pivot_idx])
+			left++;
+		while (str[right] < str[pivot_idx])
+			right--;
+		if (left < right)
+			swap(&str[left], &str[right]);
+	}
+	if (pivot_idx == right)	// 이미 정렬된 상태
+		return ;
+	swap(&str[pivot_idx], &str[right]);	// right 위치에 pivot이 옴
+	quick_sort(str, start, right - 1);
+	quick_sort(str, right + 1, end);
 }
 
 int main(void)
 {
     char    str[100000];
     int     sum;
+	int		len;
 
     scanf("%s", str);
     if (!strchr(str, (int)'0'))
@@ -45,7 +77,11 @@ int main(void)
             printf("-1\n");
         else
         {
-            sort(str);
+            len = strlen(str);
+			if (len > 2)
+				quick_sort(str, 0, len - 1);
+			else
+				bubble_sort(str);
             printf("%s\n", str);
         }
     }
