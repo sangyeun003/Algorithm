@@ -1,3 +1,4 @@
+// 알고리즘이 이해가 안됨
 #include	<stdio.h>
 #include	<string.h>
 
