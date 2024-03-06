@@ -10,6 +10,7 @@ int	main(void)
 	scanf("%d", &n);
 	for (int i = 0; i < n; i++)
 		scanf("%d", &p[i]);
+	// 선택 정렬
 	for (int i = 0; i < n - 1; i++)
 	{
 		// 최소값 찾아서 swap
