@@ -1,3 +1,4 @@
+// Merge Sort 관련
 #include	<stdio.h>
 
 int	main(void)
