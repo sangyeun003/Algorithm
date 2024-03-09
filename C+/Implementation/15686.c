@@ -5,7 +5,10 @@ int	abs(int n)
 	return (n >= 0 ? n : n * (-1));
 }
 
-int	backtracking(int map[][50], int n);
+void	choose()
+{
+
+}
 
 int	main(void)
 {
@@ -39,4 +42,5 @@ int	main(void)
 				total
 		}
 	}
+	return (0);
 }
