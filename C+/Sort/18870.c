@@ -94,9 +94,9 @@ void	quick_sort(int x[], int left, int right)
 		// x[low] <= x[pivot_index] 여기에 등호 하나 넣었더니 잘되네?
 		// 중복되는 수 없으면 등호 없어도 잘됨 
 		// -> 두 반복문 중 한 개 이상에만 등호 주면 됨
-		while (low <= high && x[low] <= x[pivot_index])
+		while (low < right && x[low] <= x[pivot_index])
 			low++;
-		while (low <= high && x[high] >= x[pivot_index])
+		while (left < high && x[high] >= x[pivot_index])
 			high--;
 		// swap
 		if (low < high)
