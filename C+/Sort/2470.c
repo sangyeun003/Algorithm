@@ -95,8 +95,10 @@ int	main(void)
 		}
 		if (sum > 0)
 			end--;
-		else
+		else if (sum < 0)
 			start++;
+		else
+			break ;
 	}
 	printf("%d %d\n", liq[ans_idx[0]], liq[ans_idx[1]]);
 	return (0);
