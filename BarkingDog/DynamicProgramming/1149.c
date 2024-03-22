@@ -1,13 +1,13 @@
 #include	<stdio.h>
 
-#define N	100
+#define N	1000
 
 int	cost[N + 1][3];
 
 // 테이블 정의
-// cost[i][0] = i번째 집까지 색칠할 때 최소 비용. 단 i번째 집은 Red
-// cost[i][1] = i번째 집까지 색칠할 때 최소 비용. 단 i번째 집은 Green
-// cost[i][2] = i번째 집까지 색칠할 때 최소 비용. 단 i번째 집은 Blue
+// total[i][0] = i번째 집까지 색칠할 때 최소 비용. 단 i번째 집은 Red
+// total[i][1] = i번째 집까지 색칠할 때 최소 비용. 단 i번째 집은 Green
+// total[i][2] = i번째 집까지 색칠할 때 최소 비용. 단 i번째 집은 Blue
 int	total[N + 1][3];
 
 int	min(int a, int b)
