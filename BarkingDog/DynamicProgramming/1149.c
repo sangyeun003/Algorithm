@@ -29,12 +29,12 @@ int	main(void)
 	// total[i][0] = min(total[i - 1][1], total[i - 1][2]) + cost[i][0]
 	// total[i][1] = min(total[i - 1][0], total[i - 1][2]) + cost[i][1]
 	// total[i][2] = min(total[i - 1][0], total[i - 1][1]) + cost[i][2]
-	for (int i = 2; i <= N; i++)
+	for (int i = 2; i <= n; i++)
 	{
 		total[i][0] = min(total[i - 1][1], total[i - 1][2]) + cost[i][0];
 		total[i][1] = min(total[i - 1][0], total[i - 1][2]) + cost[i][1];
 		total[i][2] = min(total[i - 1][0], total[i - 1][1]) + cost[i][2];
 	}
-	printf("%d\n", min(total[N][0], min(total[N][1], total[N][2])));
+	printf("%d\n", min(total[n][0], min(total[n][1], total[n][2])));
 	return (0);
 }
