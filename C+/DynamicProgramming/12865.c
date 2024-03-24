@@ -19,6 +19,7 @@ int	main(void)
 	// 테이블 정의
 	// dp[i][w]: 버틸 수 있는 무게가 w이고 i번째 물건까지 판단했을 때 max value
 	
+	// 점화식 찾기
 	//	if (w[i] > k)
 	//		dp[i][w] = dp[i - 1][w];
 	//	else
