@@ -23,6 +23,8 @@ int	main(void)
 	//		dp[i][w] = dp[i - 1][w];
 	//	else
 	//		dp[i][w] = max(dp[i - 1][w], v[i] + dp[i][w - w[i]]);
+
+	// 초기값 정하기
 	for (int i = 0; i <= n; i++)
 		dp[i][0] = 0;
 	for (int weight = 0; weight <= k; weight++)
