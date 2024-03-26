@@ -21,7 +21,7 @@ int	dfs(int x, int y) // (x, y) -> (m, n) 가능한 경로의 수
 	
 	if (x == n && y == m)
 		return (1);
-	if (path[y][x] != -1)
+	if (path[y][x] != -1)		// memoization
 		return (path[y][x]);
 	path[y][x] = 0;
 	for (int i = 0; i < 4; i++)
