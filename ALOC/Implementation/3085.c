@@ -4,7 +4,7 @@
 int		n;
 char	map[51][51];
 
-int	row_max_continuous()	// 현재 상태 기준 행 중에서 가장 긴 연속 알파벳 길이
+int	row_max_continuous(void)	// 현재 상태 기준 행 중에서 가장 긴 연속 알파벳 길이
 {
 	int	max_cont;
 	int	len;
@@ -30,7 +30,7 @@ int	row_max_continuous()	// 현재 상태 기준 행 중에서 가장 긴 연속
 	return max_cont;
 }
 
-int	col_max_continuous()	// 현재 상태 기준 열 중에서 가장 긴 연속 알파벳 길이
+int	col_max_continuous(void)	// 현재 상태 기준 열 중에서 가장 긴 연속 알파벳 길이
 {
 	int	max_cont;
 	int	len;
