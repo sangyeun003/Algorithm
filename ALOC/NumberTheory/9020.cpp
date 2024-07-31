@@ -11,6 +11,7 @@ int	main(void)
 
 	prime[0] = -1;
 	prime[1] = -1;
+	// 에라토스테네스 체
 	for (int i = 2; i <= 10000; i++)
 	{
 		if (prime[i] != -1)
