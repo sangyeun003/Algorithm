@@ -42,12 +42,12 @@ int	is_surrounded(int r, int c)
 {
 	if (r == 0)
 	{
-		if (c == 0 && c == n - 1)
+		if (c == 0 || c == n - 1)
 			return (0);
 	}
 	else if (r == n - 1)
 	{
-		if (c == 0 && c == n - 1)
+		if (c == 0 || c == n - 1)
 			return (0);
 	}
 	int	cnt;
@@ -60,7 +60,7 @@ int	is_surrounded(int r, int c)
 
 		if (new_r >= 0 && new_r <= n - 1 && new_c >= 0 && new_c <= n - 1)
 		{
-			if (a[new_r][new_c] > 0)
+			if (temp[new_r][new_c] > 0)
 				cnt++;
 		}
 	}
