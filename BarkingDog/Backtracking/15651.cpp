@@ -4,7 +4,7 @@ using namespace std;
 
 int	n;
 int	m;
-int	num[8];
+int	num[7];
 
 void	backtracking(int depth)
 {
