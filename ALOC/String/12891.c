@@ -61,7 +61,6 @@ int	main(void)
 	int		s_len;
 	int		p_len;
 	char	s[1000001];
-	char	p[1000001];
 	int		acgt[4];
 
 	scanf("%d %d", &s_len, &p_len);
