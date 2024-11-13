@@ -1,4 +1,4 @@
-# 알고리즘 문제풀이
+# ALGORITHM
 
 ## [ALOC](https://aloc.kr)
 
